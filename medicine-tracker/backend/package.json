@@ -1,0 +1,51 @@
+{
+  "name": "culture_wire",
+  "version": "1.0.0",
+  "description": "culture_wire",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "src": "npm start --prefix src",
+    "dev": "concurrently \"npm run server\" \"npm run src\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix src && npm run build --prefix src"
+  },
+  "author": "Sneha Singh",
+  "license": "Onclick Inovation",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "agenda": "^3.1.0",
+    "apn": "^2.2.0",
+    "aws-sdk": "^2.931.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dateformat": "^4.5.1",
+    "dotenv": "^9.0.0",
+    "event-stream": "^4.0.1",
+    "express": "^4.17.3",
+    "fcm-node": "^1.6.1",
+    "flat": "^5.0.2",
+    "gravatar": "^1.8.2",
+    "handlebars": "^4.7.7",
+    "joi": "^17.6.0",
+    "json2csv": "^5.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "nanoid": "^3.1.23",
+    "nodemailer": "^6.6.0",
+    "nodemon": "^2.0.7",
+    "twilio": "^3.63.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.18.11"
+  }
+}
