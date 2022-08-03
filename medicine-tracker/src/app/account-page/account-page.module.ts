@@ -5,6 +5,8 @@ import { AccountPageRoutingModule } from './account-page-routing.module';
 import { AddMedicineComponent } from './add-medicine/add-medicine.component';
 import { EditMedicineComponent } from './edit-medicine/edit-medicine.component';
 import { ListMedicineComponent } from './list-medicine/list-medicine.component';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ListMedicineComponent } from './list-medicine/list-medicine.component';
   ],
   imports: [
     CommonModule,
-    AccountPageRoutingModule
+    AccountPageRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AccountPageModule { }

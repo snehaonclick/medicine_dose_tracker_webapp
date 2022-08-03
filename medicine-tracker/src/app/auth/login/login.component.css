@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     background-color: #17a2b8;
@@ -16,4 +16,11 @@ body {
   }
   #login .container #login-row #login-column #login-box #login-form #register-link {
     margin-top: -85px;
-  }
+  } */
+
+
+  @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }

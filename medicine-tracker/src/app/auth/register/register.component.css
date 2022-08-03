@@ -1,4 +1,4 @@
-body {
+/* body {
     padding-top: 90px;
 }
 .panel-login {
@@ -96,4 +96,10 @@ body {
 	color: #fff;
 	background-color: #1CA347;
 	border-color: #1CA347;
-}
+} */
+
+@media (min-width: 1025px) {
+	.h-custom {
+	height: 100vh !important;
+	}
+	}
